@@ -145,7 +145,7 @@
 
 include "koneksi.php";
 
-$qry_barang=mysqli_query($koneksi,"select * from barang");
+$qry_barang=mysqli_query($koneksi,"select * from barang where status='dibuka'");
 
 while($dt_barang=mysqli_fetch_array($qry_barang)){
 
